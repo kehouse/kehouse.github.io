@@ -1,0 +1,22 @@
+{
+  "name": "kehouse.github.io",
+  "main": "index.js",
+  "homepage": "https://github.com/kehouse/kehouse.github.io",
+  "description": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "moment": "^2.13.0",
+    "underscore": "^1.8.3",
+    "bootstrap": "^3.3.6",
+    "angular": "^1.5.5",
+    "angular-route": "^1.5.5"
+  }
+}
