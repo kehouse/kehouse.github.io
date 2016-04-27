@@ -31939,6 +31939,10 @@ angular
         templateUrl: "./portfolioApp/templates/work.html",
         // controller: "HomeController"
       })
+      .when('/resume', {
+        templateUrl: "./portfolioApp/templates/resume.html",
+        // controller: "HomeController"
+      })
       .when('/contact', {
         templateUrl: "./portfolioApp/templates/contact.html",
         // controller: "HomeController"
