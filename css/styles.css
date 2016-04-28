@@ -23,7 +23,7 @@ body {
   background-color: #6E907F;
   border-color: #6E907F; }
 
-.btn {
+.btn-home {
   display: block;
   width: 175px;
   padding: 6px 12px;
@@ -49,14 +49,44 @@ body {
 .first {
   margin-top: 100px; }
 
+.footerBoxMain {
+  margin-left: 65%;
+  margin-top: -3%; }
+  .footerBoxMain img {
+    width: 10%;
+    margin: 2%; }
+
+.btn {
+  display: inline;
+  width: 175px;
+  padding: 6px 12px;
+  margin-left: 0%;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px; }
+
 .about {
-  margin-left: 35%; }
+  margin-left: 15%;
+  margin-top: 2%; }
   .about p {
     color: #3C763D; }
 
 .about a {
   font-family: 'Open Sans', sans-serif;
-  color: #333;
+  color: #ffffff;
   opacity: 0.9;
   text-decoration: none;
   font-size: 20px;
@@ -109,14 +139,23 @@ body {
     vertical-align: top;
     text-align: justify; }
 
+.footerBox {
+  margin-left: 40%;
+  margin-top: 25%;
+  margin-bottom: 2%; }
+  .footerBox img {
+    width: 5%;
+    margin: 2%; }
+
 .work {
-  margin-left: 35%; }
+  margin-left: 15%;
+  margin-top: 2%; }
   .work p {
     color: #3C763D; }
 
 .work a {
   font-family: 'Open Sans', sans-serif;
-  color: #333;
+  color: #ffffff;
   opacity: 0.9;
   text-decoration: none;
   font-size: 20px;
@@ -178,13 +217,15 @@ body {
     color: #333; }
 
 .resume {
-  margin-left: 35%; }
+  margin-left: 15%;
+  margin-top: 2%;
+  margin-bottom: 2%; }
   .resume p {
     color: #3C763D; }
 
 .resume a {
   font-family: 'Open Sans', sans-serif;
-  color: #333;
+  color: #ffffff;
   opacity: 0.9;
   text-decoration: none;
   font-size: 20px;
@@ -194,16 +235,19 @@ body {
   margin-bottom: .70%; }
 
 .resumeImg img {
-  width: 55%; }
+  width: 55%;
+  margin: 0 auto;
+  display: block; }
 
 .contact {
-  margin-left: 35%; }
+  margin-left: 15%;
+  margin-top: 2%; }
   .contact p {
     color: #3C763D; }
 
 .contact a {
   font-family: 'Open Sans', sans-serif;
-  color: #333;
+  color: #ffffff;
   opacity: 0.9;
   text-decoration: none;
   font-size: 20px;
@@ -211,3 +255,16 @@ body {
 
 .contact img {
   margin-bottom: .70%; }
+
+.contactBox {
+  background-color: #333;
+  opacity: 0.9;
+  width: 550px;
+  height: 75px;
+  margin: -50px 0px 0px 698px; }
+  .contactBox h1 {
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    padding: 18px 0px 0px 190px; }
+  .contactBox p {
+    margin: 30px 0px 0px 0px; }
