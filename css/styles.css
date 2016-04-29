@@ -14,12 +14,14 @@ body {
   width: 55%;
   height: 585px;
   margin: 0 auto;
-  margin-top: -20%;
-  position: relative;
-  x-index: 1; }
+  margin-top: -20%; }
 
 .btn-default {
   color: #f5f5f5;
+  background-color: #6E907F;
+  border-color: #6E907F; }
+
+.btn-default:hover {
   background-color: #6E907F;
   border-color: #6E907F; }
 
@@ -244,16 +246,16 @@ a.control_next {
 .chuckwagonImg {
   border-radius: 100%;
   width: 18%;
-  margin-left: 130px;
+  margin-left: 225px;
   margin-right: 100px;
   margin-bottom: 45px;
-  margin-top: 20px; }
+  margin-top: 45px; }
 
 .chuckwagon {
   display: inline-block;
   vertical-align: top;
   text-align: justify;
-  width: 600px;
+  width: 460px;
   margin-top: 40px; }
   .chuckwagon h4 {
     text-decoration: none;
@@ -262,15 +264,16 @@ a.control_next {
 .jeopardyImg {
   border-radius: 100%;
   width: 18%;
-  margin-left: 130px;
+  margin-left: 225px;
   margin-right: 100px;
+  margin-top: 20px;
   margin-bottom: 45px; }
 
 .jeopardy {
   display: inline-block;
   vertical-align: top;
   text-align: justify;
-  width: 600px;
+  width: 460px;
   margin-top: 20px; }
   .jeopardy h4 {
     text-decoration: none;
@@ -279,15 +282,16 @@ a.control_next {
 .skateImg {
   border-radius: 100%;
   width: 18%;
-  margin-left: 130px;
+  margin-left: 225px;
   margin-right: 100px;
+  margin-top: 20px;
   margin-bottom: 45px; }
 
 .skate {
   display: inline-block;
   vertical-align: top;
   text-align: justify;
-  width: 600px;
+  width: 460px;
   margin-top: 20px; }
   .skate h4 {
     text-decoration: none;
