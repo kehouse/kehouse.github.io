@@ -10,7 +10,7 @@ angular
 
   require('./portfolioApp');
 
-},{"./portfolioApp":6,"angular":5,"angular-route":3}],2:[function(require,module,exports){
+},{"./portfolioApp":7,"angular":5,"angular-route":3}],2:[function(require,module,exports){
 /**
  * @license AngularJS v1.5.5
  * (c) 2010-2016 Google, Inc. http://angularjs.org
@@ -31915,11 +31915,63 @@ require('./angular');
 module.exports = angular;
 
 },{"./angular":4}],6:[function(require,module,exports){
+angular
+  .module('portfolio')
+  .controller('AboutController', AboutController);
+
+  AboutController.$inject = ['$scope']
+  function AboutController($scope){
+    jQuery(document).ready(function ($) {
+
+      setInterval(function () {
+          moveRight();
+      }, 5000);
+    });
+
+  	var slideCount = $('#slider ul li').length;
+  	var slideWidth = $('#slider ul li').width();
+  	var slideHeight = $('#slider ul li').height();
+  	var sliderUlWidth = slideCount * slideWidth;
+
+  	$('#slider').css({ width: slideWidth, height: slideHeight });
+
+  	$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+
+      $('#slider ul li:last-child').prependTo('#slider ul');
+
+      function moveLeft() {
+          $('#slider ul').animate({
+              left: + slideWidth
+          }, 200, function () {
+              $('#slider ul li:last-child').prependTo('#slider ul');
+              $('#slider ul').css('left', '');
+          });
+      };
+
+      function moveRight() {
+          $('#slider ul').animate({
+              left: - slideWidth
+          }, 200, function () {
+              $('#slider ul li:first-child').appendTo('#slider ul');
+              $('#slider ul').css('left', '');
+          });
+      };
+
+      $('a.control_prev').click(function () {
+          moveLeft();
+      });
+
+      $('a.control_next').click(function () {
+          moveRight();
+      });
+    }
+
+},{}],7:[function(require,module,exports){
 require('./portfolio.module');
-// require('./controllers/home.controller');
+require('../portfolioApp/controllers/about.controller');
 // require('./services/home.services');
 
-},{"./portfolio.module":7}],7:[function(require,module,exports){
+},{"../portfolioApp/controllers/about.controller":6,"./portfolio.module":8}],8:[function(require,module,exports){
 var angular = require('angular');
 var angularRoute = require('angular-route');
 
@@ -31933,7 +31985,7 @@ angular
       })
       .when('/about', {
         templateUrl: "./portfolioApp/templates/about.html",
-        // controller: "HomeController"
+        controller: "AboutController"
       })
       .when('/work', {
         templateUrl: "./portfolioApp/templates/work.html",

@@ -11,7 +11,7 @@ angular
       })
       .when('/about', {
         templateUrl: "./portfolioApp/templates/about.html",
-        // controller: "HomeController"
+        controller: "AboutController"
       })
       .when('/work', {
         templateUrl: "./portfolioApp/templates/work.html",

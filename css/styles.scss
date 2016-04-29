@@ -72,7 +72,7 @@ body {
     display: inline;
     width: 175px;
     padding: 6px 12px;
-    margin-left: 0%;
+    margin-left: 3%;
     font-size: 14px;
     font-weight: normal;
     line-height: 1.42857143;
@@ -125,25 +125,111 @@ body {
 .skillsBox {
   background-color: #333;
   opacity: 0.9;
-  width: 350px;
-  height: 70px;
-  margin: -45px 0px 0px 35px;
+  width: 1224px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 22%;
   h1 {
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
-    padding: 20px 0px 0px 83px;
+    padding: 27px 0px 0px 555px;
   }
+}
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 2%;
+  border-radius: 4px;
+  img {
+    margin-top: 4%;
+    display: inline-block;
+    vertical-align: top;
+    width: 35%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+  p {
+    margin-top: -42%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #333;
+  }
+  ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    list-style: none;
+    li {
+      position: relative;
+      display: block;
+      float: left;
+      margin: 0;
+      padding: 0;
+      width: 500px;
+      height: 300px;
+      background: #ffffff;
+      text-align: center;
+      line-height: 300px;
+    }
+  }
+}
+
+.why {
+  width: 25% !important;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #333;
+  opacity: 0.9;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
 }
 
 .meBox {
   display: inline-block;
   vertical-align: top;
-  margin-left: 450px;
-  margin-right: 25px;
-  margin-top: -20px;
+  margin-left: 34.5px;
+  margin-right: 0px;
+  margin-top: 2.5%;
   background-color: #333;
   opacity: 0.9;
-  width: 800px;
+  width: 1214px;
   height: 100px;
   h1 {
     display: inline-block;
@@ -152,7 +238,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
     font-style: italic;
-    padding: 28px 0px 50px 295px;
+    padding: 31px 0px 50px 37px;
     margin-top: 0px;
   }
   p {
@@ -163,13 +249,15 @@ body {
 }
 
 .footerBox {
-  margin-left: 40%;
-  margin-top: 25%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
   margin-bottom: 2%;
-  img {
-    width: 5%;
-    margin: 2%;
-  }
+    img {
+      width: 80%;
+      margin: 0.5%;
+      height: 0%;
+    }
 }
 
 // PORTFOLIO PAGE
@@ -272,6 +360,7 @@ body {
   color: #ffffff;
   opacity: 0.9;
   text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   padding: 25px;
 }
@@ -285,13 +374,31 @@ body {
     width: 55%;
     margin: 0 auto;
     display: block;
+    margin-top: 5%;
   }
+}
+
+.download {
+  margin-left: 40%;
+  margin-top: 2%;
+}
+
+.rFooterBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+    img {
+      width: 80%;
+      margin: 0.5%;
+      height: 0%;
+    }
 }
 
 // CONTACT PAGE
 
 .contact {
-  margin-left: 15%;
+  margin-left: 16%;
   margin-top: 2%;
   p {
     color: #3C763D;
@@ -314,15 +421,63 @@ body {
 .contactBox {
   background-color: #333;
   opacity: 0.9;
-  width: 550px;
+  width: 748px;
   height: 75px;
-  margin: -50px 0px 0px 698px;
+  margin: -50px 0px 25px 500px;
   h1 {
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
-    padding: 18px 0px 0px 190px;
+    padding: 18px 0px 0px 280px;
   }
   p {
     margin: 30px 0px 0px 0px;
+  }
+}
+
+.contactPhone {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  margin-left: 39%;
+  margin-bottom: 2%;
+  a {
+    color: #6E907F;
+    padding: 3%;
+  }
+}
+
+.contactMail {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  margin-left: 39%;
+  margin-bottom: 2%;
+  a {
+    color: #6E907F;
+    padding: 3%;
+  }
+}
+
+.contactLink {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  margin-left: 39%;
+  margin-bottom: 2%;
+  a {
+    color: #6E907F;
+    padding: 3%;
+  }
+}
+
+.contactGit {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  margin-left: 39%;
+  margin-bottom: 2%;
+  a {
+    color: #6E907F;
+    padding: 3%;
   }
 }

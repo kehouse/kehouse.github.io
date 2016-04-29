@@ -1,3 +1,3 @@
 require('./portfolio.module');
-// require('./controllers/home.controller');
+require('../portfolioApp/controllers/about.controller');
 // require('./services/home.services');
