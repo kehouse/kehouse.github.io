@@ -8,7 +8,7 @@ angular
 
       setInterval(function () {
           moveRight();
-      }, 5000);
+      }, 6000);
     });
 
   	var slideCount = $('#slider ul li').length;
