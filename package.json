@@ -1,7 +1,6 @@
 {
   "name": "kehouse.github.io",
   "version": "1.0.0",
-  "description": "",
   "main": "app.module.js",
   "dependencies": {
     "angular": "^1.5.5",
@@ -18,10 +17,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-       "start": "npm run watch-js & npm run watch-css & ./node_modules/.bin/serve",
-       "bundle": "./node_modules/.bin/browserify --entry app.module.js -o bundle.js",
-       "watch-js": "./node_modules/.bin/watchify --entry app.module.js -o bundle.js",
-       "watch-css": "./node_modules/.bin/node-sass -w css/styles.scss css/styles.css"
+    "start": "npm run watch-js & npm run watch-css & ./node_modules/.bin/serve",
+    "bundle": "browserify --entry app.module.js -o bundle.js",
+    "watch-js": "watchify --entry app.module.js -o bundle.js",
+    "watch-css": "node-sass -w css/styles.scss css/styles.css"
   },
   "repository": {
     "type": "git",
@@ -32,5 +31,6 @@
   "bugs": {
     "url": "https://github.com/kehouse/kehouse.github.io/issues"
   },
-  "homepage": "https://github.com/kehouse/kehouse.github.io#readme"
+  "homepage": "https://github.com/kehouse/kehouse.github.io#readme",
+  "description": ""
 }
